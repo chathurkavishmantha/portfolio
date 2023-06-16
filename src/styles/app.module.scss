@@ -1,0 +1,8 @@
+@import '../styles/contents.scss';
+
+.container{
+overflow-x: clip;
+position: relative;
+color: $primary;
+height: 300vh;
+}
