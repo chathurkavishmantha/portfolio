@@ -31,10 +31,13 @@
         font-weight: 500;
         flex-direction: column;
         width: 60%;
+        z-index: 9;
         right: 0;
         top: 3rem;
         max-width: 15rem;
-        background: white;
+        background: rgb(199, 252, 207);
+        box-shadow: 8px 6px 4px rgba(0, 0, 0, 0.126);
+
         padding: 2rem;
         border-radius: 2rem;
         display: flex;

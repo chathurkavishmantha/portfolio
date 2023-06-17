@@ -1,7 +1,8 @@
 import React from "react";
 import css from "./Hero.module.scss";
 import cetificate from "../../imgs/certificate.png";
-import person from "../../imgs/person1.png";
+import person from "../../imgs/person4.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -16,11 +17,19 @@ const Hero = () => {
         </div>
 
         {/* Middle Image */}
-        <div className={css.prodileImage}>
-          <img src={person} width="100%" alt="" />
-        </div>
+        <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.1 }}
+      className={` ${css.prodileImage}`}
 
-        <div className={css.email}>
+    ><img src={person} width="100%" alt="" />
+        {/* <div className={css.prodileImage}>
+          <img src={person} width="100%" alt="" />
+        </div> */}
+        </motion.div>
+
+        <div className={`secondaryText ${css.email}`}>
           <a href="">chathurkavish@gmail.com</a>
         </div>
 
@@ -35,8 +44,8 @@ const Hero = () => {
           </div>
           <div className={css.cettificate}>
             <img src={cetificate} alt="" />
-            <span>UI/UX Designer</span>
-            <span>Web Developer</span>
+            <div className="secondaryText">UI/UX Designer</div>
+            <div className="secondaryText">Web Developer</div>
           </div>
         </div>
       </div>

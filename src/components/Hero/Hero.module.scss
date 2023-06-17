@@ -35,32 +35,56 @@
       @media (max-width: $sm) {
         padding-left: 0.8rem;
         padding-right: 0.8rem;
-       margin-top: 0;
-       display: flex;
-       flex-direction: row;
-       gap: 1rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
       }
 
       display: flex;
       justify-content: space-between;
-      margin-top: 13rem;
+      margin-top: 16rem;
+      margin-bottom: 2rem;
       align-items: center;
 
       .experience {
         @media (max-width: $sm) {
           position: relative;
           display: flex;
+          margin-top: 1rem;
+          flex-direction: row;
+          justify-items: flex-start;
         }
         display: flex;
         align-items: center;
         gap: 0.7rem;
+        > :nth-child(2) {
+          line-height: 25px;
+        }
       }
 
       .cettificate {
+        @media (max-width : $sm) {
+          position: relative;
+          display: flex;
+          margin-top: 1rem;
+          flex-direction: column;
+          justify-items: center
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.7rem;
+        gap: 0.7rem;        
+        flex-wrap: wrap;
+        > :nth-child(2) {
+          line-height: 10px;
+        }
+
+        img{
+          @media (max-width : $sm) {
+            width: 40%;
+          }
+        }
 
         // padding-bottom: 10rem;
       }
@@ -69,7 +93,7 @@
     .prodileImage {
       @media (max-width: $sm) {
         position: relative;
-        opacity: 0.2;
+        opacity: 1;
         z-index: -1;
         left: 0;
         top: 0;
@@ -79,14 +103,19 @@
       display: flex;
       position: absolute;
       margin: auto;
+      width: 30%;
       bottom: -2rem;
       background-image: url("../../imgs//splash.png");
       background-repeat: no-repeat;
       background-size: 23rem;
       left: 37.3%;
       transition: all 300ms ease;
+      background-position: center;
 
-      img {
+      img{
+        @media (max-width: $sm) {
+          
+        }
       }
     }
 
