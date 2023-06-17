@@ -68,8 +68,9 @@
           position: relative;
           display: flex;
           margin-top: 1rem;
-          flex-direction: column;
-          justify-items: center
+          // flex-direction: column;
+          // justify-content: flex-start;
+          // justify-items: center
         }
         display: flex;
         flex-direction: column;

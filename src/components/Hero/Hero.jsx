@@ -36,15 +36,16 @@ const Hero = () => {
         {/* lower Element */}
         <div className={css.lowerElements}>
           <div className={css.experience}>
-            <div className="primaryText">10</div>
+            <div className="primaryText">2</div>
             <div className="secondaryText">
               <div>Years</div>
               <div>Experience</div>
             </div>
           </div>
           <div className={css.cettificate}>
-            <img src={cetificate} alt="" />
+            {/* <img src={cetificate} alt="" /> */}
             <div className="secondaryText">UI/UX Designer</div>
+            <div className="secondaryText">Frontend Developer</div>
             <div className="secondaryText">Web Developer</div>
           </div>
         </div>
