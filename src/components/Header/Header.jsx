@@ -20,7 +20,7 @@ const Header = () => {
     >
       <div className={`paddings ${css.wrapper}`}>
         <div className={`flexCenter innerWidth ${css.container}`}>
-          <div className={css.name}>Chathurka</div>
+          <div className={css.name}>Portfolio</div>
 
           {/* Menu Items */}
           <ul
