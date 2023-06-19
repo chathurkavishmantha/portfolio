@@ -3,28 +3,38 @@ import css from "./Hero.module.scss";
 import cetificate from "../../imgs/certificate.png";
 import person from "../../imgs/person4.png";
 import { motion } from "framer-motion";
+import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 
 const Hero = () => {
   return (
     <section className={css.wrapper}>
-      <div className={`innerWidth ${css.container}`}>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.1 }}
+        className={`innerWidth ${css.container}`}
+      >
         {/* Upper Element */}
         <div className={css.upperElements}>
-          <span className="primaryText">
+          <motion.span
+            variants={fadeIn("right", "tween", 0.2, 1)}
+            className="primaryText"
+          >
             Hey There, <br /> I'm Chathurka
-          </span>
-          <span className="secondaryText">I do what I love</span>
+          </motion.span>
+          <motion.span variants={fadeIn("left", "tween", 0.2, 1)} className="secondaryText">I do what I love</motion.span>
         </div>
 
         {/* Middle Image */}
         <motion.div
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
-      className={` ${css.prodileImage}`}
-
-    ><img src={person} width="100%" alt="" />
-        {/* <div className={css.prodileImage}>
+          initial="hidden"
+          whileInView="show"
+          variants={slideIn("up", "tween", 0.1, 1.9)}
+          className={` ${css.prodileImage}`}
+        >
+          <img src={person} width="100%" alt="" />
+          {/* <div className={css.prodileImage}>
           <img src={person} width="100%" alt="" />
         </div> */}
         </motion.div>
@@ -49,7 +59,7 @@ const Hero = () => {
             <div className="secondaryText">Web Developer</div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -7,8 +7,8 @@ import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const headerShadow = useHeaderShadow()
-  
+  const headerShadow = useHeaderShadow();
+
   return (
     <motion.div
       initial="hidden"
@@ -16,8 +16,7 @@ const Header = () => {
       variants={headerVariants}
       viewport={{ once: false, amount: 0.1 }}
       className={` ${css.wrapper}`}
-      style={{boxShadow: headerShadow}}
-
+      style={{ boxShadow: headerShadow }}
     >
       <div className={`paddings ${css.wrapper}`}>
         <div className={`flexCenter innerWidth ${css.container}`}>

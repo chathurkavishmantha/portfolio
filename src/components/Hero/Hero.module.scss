@@ -2,16 +2,16 @@
 
 .wrapper {
   @media (max-width: $sm) {
-    position: relative;
-    height: 100%;
-    margin: 0;
+    height: auto;
+    margin-top: -6rem;
+    padding-top: 6rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   overflow: hidden;
-  background-color: $secondary-white;
-  padding: -1rem 5rem;
-
+  background-color: #F9F7F0;
+  padding: 7rem 5rem;
+  margin-top: -7rem;
   .container {
     position: relative;
     z-index: 0;

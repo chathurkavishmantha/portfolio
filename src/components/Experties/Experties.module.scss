@@ -1,0 +1,85 @@
+@import "../../styles/contents.scss";
+
+.wrapper {
+  background-color: white;
+  // height: auto;
+
+  .container {
+    display: flex;
+    @media (max-width: $sm) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects {
+      @media (max-width: $sm) {
+        width: 100%;
+        margin: auto;
+      }
+
+      width: 50%;
+
+      .cards {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem 0rem 2rem 4rem;
+        border: 1px solid #dddddd;
+        background: $secondary;
+        border-radius: 10px;
+        margin: 1rem;
+        color: white;
+
+        .icons {
+          color: $secondary;
+          // background: rgb(255, 255, 255);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+          > :nth-child(1) {
+            background: rgb(209, 233, 32);
+            border-radius: 200px;
+            padding: 0.4rem;
+          }
+        }
+
+        .iconsDetailsContainer {
+          > :nth-child(2) {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    .info {
+      @media (max-width: $sm) {
+        width: auto;
+        text-align: justify;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      width: 50%;
+      padding-left: 2rem;
+
+      .description {
+        margin-top: 1rem;
+
+        line-height: 2.2rem;
+        > :nth-child(2) {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .numberContainer {
+        display: flex;
+
+        .number {
+          margin-right: 2rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
