@@ -37,25 +37,21 @@ const Experties = () => {
         <div className={css.info}>
           <div className="primaryText" style={{textAlign:"center"}}>How can I help?</div>
           <div className={css.description}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error
-            ipsum, quo mollitia magnam quam vel! Asperiores ullam nobis, iusto
-            sapiente aut itaque laudantium iure eveniet vitae! Labore, mollitia
-            amet?</p>
+            <p>I'm a front-end and Web developer based in Colombo, Sri Lanka. I have developed and maintained many types of front-ends from well know Bootstrap, ReactJs Ecommerce like Magento, Drupal, WordPress applications and systems.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error
-            ipsum, </p>
+            <p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX. </p>
 
             
           </div>
 
           <div className={css.numberContainer}>
             <div className={css.number}>
-              <div className="primaryText">285</div>
+              <div className="primaryText">12</div>
               <div>Project Completed</div>
             </div>
             <div className={css.number}>
-              <div className="primaryText">285</div>
-              <div>Project Completed</div>
+              <div className="primaryText">8</div>
+              <div>Happy CLients</div>
             </div>
           </div>
         </div>

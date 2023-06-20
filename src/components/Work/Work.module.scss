@@ -1,0 +1,118 @@
+@import "../../styles/contents.scss";
+
+
+.wrapper {
+    background-color: rgb(252, 255, 235);
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+
+        span{
+            text-align: center;
+        }
+
+        .experiences {
+            @media (max-width: $sm) {
+                font-size: 0.8rem;
+                gap: 0rem;
+                text-align: start;
+                
+            }
+
+            width: 100%;
+            flex-direction: column;
+            gap: 1.4rem;
+            position: relative;
+
+            .exp {
+                @media (max-width: $sm) {
+                    line-height: 24px;
+                    padding-top: 0;
+                }
+                width: 100%;
+                justify-content: space-between;
+                line-height: 40px;
+                align-items: flex-start;
+                padding: 1rem;
+
+                >div {
+                    flex: 1;
+                }
+
+                .role {
+                    margin-left: 2rem;
+                }
+            }
+
+            .progressbar {
+                @media (max-width: $sm) {
+                    left: 40%;
+                }
+                position: absolute;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+                left: 45%;
+
+                .line {
+                    
+                    position: absolute;
+                    height: 96%;
+                    width: 2px;
+                    background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+                    background-position: right;
+                    background-size: 2px 30px;
+                    background-repeat: repeat-y;
+                    left: 50%;
+                    z-index: 1;
+                    border-radius: 5px;
+                }
+                @media (max-width: $sm) {
+                    >:nth-child(3){
+                        padding-top: 14.6rem;
+                    }
+                    >:nth-child(4){
+                        padding-top: 16.6rem;
+                    }
+                }
+                @media (min-width: $xxl),(min-width: $xl) {
+                    >:nth-child(3){
+                        padding-top: 9rem;
+                    }
+                    >:nth-child(4){
+                        padding-top: 11.1rem;
+                    }
+                }
+
+                @media (min-width: 1030) and (min-width: $lg) {
+                    >:nth-child(3){
+                        padding-top: 12rem;
+                    }
+                    >:nth-child(4){
+                        padding-top: 13.1rem;
+                    }
+                }
+
+                >div {
+                    @media (max-width: $sm) {
+                        flex: 0;
+                        
+                    }
+                    // flex: 1;
+                    padding-top: .8rem;
+                    z-index: 2;
+
+                    .circle {
+                        
+                        border-radius: 50%;
+                        background: black;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

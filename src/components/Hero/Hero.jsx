@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./Hero.module.scss";
-import cetificate from "../../imgs/certificate.png";
 import person from "../../imgs/person4.png";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
@@ -27,7 +26,7 @@ const Hero = () => {
         </div>
 
         {/* Middle Image */}
-        <motion.div
+        <div
           initial="hidden"
           whileInView="show"
           variants={slideIn("up", "tween", 0.1, 1.9)}
@@ -37,7 +36,7 @@ const Hero = () => {
           {/* <div className={css.prodileImage}>
           <img src={person} width="100%" alt="" />
         </div> */}
-        </motion.div>
+        </div>
 
         <div className={`secondaryText ${css.email}`}>
           <a href="">chathurkavish@gmail.com</a>
